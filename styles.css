@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*! Section 1 */
+
+.header {
+    min-height: 66vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3)), url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sngLogo {
+    padding-left: 20px;
+    width: 80px;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 160, 190);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 60px;
+}
+
+.text-box p {
+    font-size: 14px;
+    margin: 10px 0 40px;
+    color: white;
+}
+
+.contact-us-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.contact-us-btn:hover {
+    border: 1px solid rgb(0, 160, 190);
+    background-color: rgb(0, 160, 190);
+    transition: 0.7s;
+}
+
+nav .fa {
+    display: none;
+}
+
+
+
+
+/*! Section 2 */
+
+.sediu {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgb(110, 190, 190));
+}
+
+.sediuHeader {
+    width: 90%;
+    padding: 5%;
+    color: white;
+    top: 50%;
+    left: 50%;
+}
+
+.sediuHeader h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.informatii {
+    padding-top: 3%;
+    display: flex;
+}
+
+.adresa {
+    text-align: left;
+    width: 15%;
+    padding-right: 8vw;
+}
+
+.adresa h1 {
+    padding-bottom: 5px;
+    font-size: 30px;
+}
+
+.adresa p {
+    padding-right: 5%;
+    padding-top: 3%;
+    font-size: 20px;
+}
+
+.contact {
+    text-align: left;
+    width: 15%;
+    padding-right: 10vw;
+}
+
+.contact h1 {
+    font-size: 30px;
+
+}
+
+.contact p {
+    padding-right: 5%;
+    padding-top: 3%;
+    font-size: 20px;
+}
+
+.pozaSng {
+    padding-left: 5%;
+    width: 40%;
+    height: 40%;
+
+}
+
+/*! Section 3*/
+
+.pachete {
+    width: 100%;
+    height: 161vh;
+    background-image: linear-gradient(rgb(110, 190, 190), rgba(0, 0, 0, 0.2));
+}
+
+.pacheteTitle {
+    padding-top: 3%;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.row{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    width: 90%;
+    display: flex;
+    padding-bottom: 20vh;
+}
+.border{
+    text-align: center;
+    border-radius: 20px;
+    width: 40%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+
+}
+
+.bg{
+    margin-top: 15vh;
+    border-radius: 20px;
+    margin-left: 17vh;
+    justify-content: center;
+    position: absolute;
+    width: 30vh;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.box1{
+    background-image: url(images/radisson.jpg);
+}
+
+
+.box2{
+    
+    background-image: url(images/somabay.jpg);
+}
+.box3{
+    
+    background-image: url(images/corfu.jpg);
+}
+.box4{
+    
+    background-image: url(images/croaziera_1.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*! MediaQuery */
+
+@media(max-width: 700px) {
+
+    /*! Section 1 */
+    .header {
+        height: 100vh;
+    }
+
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        background: rgb(0 0 0 / 0.58);
+        height: 100%;
+        width: 200px;
+        top: 0;
+        right: 0px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.8s;
+
+    }
+
+    nav .fa {
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    /*! Section 2 */
+
+    .sediu {
+        height: 100vh;
+    }
+
+    .informatii {
+        display: block;
+    }
+
+    .contact {
+        width: 90%;
+        padding-top: 6%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .adresa {
+        width: 90%;
+        padding-top: 6%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pozaSng {
+        display: block;
+        padding-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        margin-bottom: 50px;
+    }
+
+}
