@@ -36,6 +36,7 @@ nav img {
 .nav-links {
     flex: 1;
     text-align: right;
+    margin-bottom: 10px;
 }
 
 .nav-links ul li {
@@ -67,6 +68,7 @@ nav img {
 }
 
 .text-box {
+    margin-top: 5vh;
     width: 90%;
     color: white;
     position: absolute;
@@ -110,13 +112,13 @@ nav .fa {
 
 
 
-/*! Section 2 */
+/*! Section 3 */
 
 .sediu {
     position: relative;
     width: 100%;
     height: 80vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgb(110, 190, 190));
+    background-image: linear-gradient(rgb(110, 190, 190), rgba(0, 0, 0, 0.2));
 }
 
 .sediuHeader {
@@ -201,12 +203,12 @@ nav .fa {
 }
 
 
-/*! Section 3*/
+/*! Section 2*/
 
 .pachete {
     width: 100%;
-    height: 161vh;
-    background-image: linear-gradient(rgb(110, 190, 190), rgba(0, 0, 0, 0.2));
+    height: 170vh;
+    background-image: linear-gradient(rgb(55 128 151 / 55%), rgb(110, 190, 190));
 }
 
 .pacheteTitle {
@@ -214,7 +216,15 @@ nav .fa {
     color: white;
     font-size: 40px;
     text-align: center;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
+}
+
+.pachete h2{
+    padding-top: 1%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 3%;
 }
 
 .row {
@@ -223,7 +233,7 @@ nav .fa {
     justify-content: space-around;
     width: 100%;
     display: flex;
-    padding-bottom: 20vh;
+    padding-bottom: 15vh;
 }
 
 .border {
@@ -235,8 +245,11 @@ nav .fa {
     background-size: cover;
     text-align: center;
     background-position: center;
+}
 
-
+.more-btn{
+    font-size: 30px;
+    margin-bottom: 100px;
 }
 
 
@@ -245,25 +258,6 @@ nav .fa {
     transform: translate(0%, 100%);
 }
 
-.box1 {
-    background-image: url(images/radisson.jpg);
-}
-
-
-.box2 {
-
-    background-image: url(images/somabay.jpg);
-}
-
-.box3 {
-
-    background-image: url(images/corfu.jpg);
-}
-
-.box4 {
-
-    background-image: url(images/croaziera_1.jpg);
-}
 
 .bg {
     display: inline-block;
@@ -277,6 +271,7 @@ nav .fa {
     padding-top: 10px;
     padding-bottom: 18%;
 }
+
 
 
 
@@ -300,6 +295,18 @@ nav .fa {
     border: 1px solid rgb(0, 160, 190);
 
 }
+
+.center-alignment{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.more-btn{
+    color: white;
+    
+}
+
 
 
 
@@ -363,8 +370,104 @@ nav .fa {
 
 
 
+/*! Pachete Page*/
+
+.pachetePageHeader {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(110, 190, 190), rgba(0, 183, 225, 0.23));
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.boxm h2{
+    font-size: 23px;
+}
+
+.box1 {
+    background-image: url(images/radisson.jpg);
+}
 
 
+.box2 {
+
+    background-image: url(images/somabay.jpg);
+}
+
+.box3 {
+
+    background-image: url(images/corfu.jpg);
+}
+
+.box4 {
+
+    background-image: url(images/vegas.jpg);
+}
+
+.box5{
+    background-image: url(images/rome.jpg);
+}
+
+.box6{
+    background-image: url(images/braga.jpg  );
+}
+
+.box7{
+    background-image: url(images/cavat.jpg);
+}
+
+.box8{
+    background-image: url(images/paris.jpg  );
+}
+
+
+
+/*! Our Team Page*/
+
+.ourTeam {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(110, 190, 190), rgba(0, 183, 225, 0.23));
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.teamTitle{
+    margin-left: 20px;
+    text-align: left;
+}
+.teamDepartament h1{
+    padding-top: 10px;
+    text-align: center;
+}
+.teamDepartament p{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    
+}
+
+.imgHolder{
+    
+    display: inline-block;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    border-radius: 10%;
+    background-image: linear-gradient(#549ca9, #72ddeb );
+}
+
+.imgHolder img{
+    margin: 20px;
+    width: 200px;
+    border-radius: 10%;
+}
+
+.teamBox{
+    display: flex;
+}
 
 /*! MediaQuery */
 
@@ -386,7 +489,7 @@ nav .fa {
     .nav-links {
         display: none;
         position: absolute;
-        background: rgb(0 0 0 / 0.58);
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
         height: 100%;
         width: 200px;
         top: 0;
@@ -408,10 +511,10 @@ nav .fa {
         padding: 30px;
     }
 
-    /*! Section 2 */
+    /*! Section 3 */
 
     .sediu {
-        height: 110vh;
+        height: 165vh;
     }
 
     .informatii {
@@ -448,10 +551,10 @@ nav .fa {
         width: 10%;
     }
 
-    /*! Section 3*/
+    /*! Section 2*/
 
     .pachete {
-        height: 225vh;
+        height: 240vh;
     }
 
     .row {
