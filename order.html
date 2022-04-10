@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formular De Comandă</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="icon" type="image/x-icon" sizes="32x32" href="images/logoSng.png">
+    </head>
+
+    <body>
+        
+            <!--! Section 1 - Header-->
+        <section class="aboutHeader">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <a href="https://sngmedias.ro/" target="_blank"><img class="sngLogo"  src="images/logoSng.png"></a>
+                <div class="nav-links" , id="navLinks">
+                    <i class="fa fa-times" aria-hidden="true" ,
+                        onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">ACASĂ</a></li>
+                        <li><a href="about_us.html">DESPRE NOI</a></li>
+                        <li><a href="pachete.html">PACHETE TURISTICE</a></li>
+                        <li><a href="our_team.html">ECHIPA NOASTRĂ</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" , onclick="showMenu()" , id="bars"></i>
+            </nav>
+            <div class="comandaHeader">
+                <h1>Formular De Comandă</h1>
+                <div class="formular">
+                    <div class="personalInfo">
+                        <div class="name">
+                            <h2>Prenume</h2>
+                        </div>
+                        <div class="name inputs">
+                            <input type="text">
+                        </div>
+                        <div class="name">
+                            <h2>Nume</h2>
+                        </div>
+                        <div class="name inputs">
+                            <input type="text">
+                        </div>
+                        <div class="name">
+                            <h2>Email</h2>
+                        </div>
+                        <div class="name inputs">
+                            <input type="text">
+                        </div>
+                        <div class="name">
+                            <h2>Telefon</h2>
+                        </div>
+                        <div class="name inputs">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="personalInfo">
+                        <div>
+                            <h2>Informații Suplimentare</h2>
+                        </div>
+                        <div class="moreBox">
+                            <textarea name="textArea" id="tArea" cols="30" rows="10"></textarea>
+                        </div>
+                        
+                    </div>
+                    <div class="custom-select">
+                        <select name="lang" id="lang">
+                            <option>Selectati Pachetul</option>
+                            <option value="">Raddison, Ucraina</option>
+                            <option value="">Somabay, Egipt</option>
+                            <option value="">Corfu, Grecia</option>
+                            <option value="">Vegas, SUA</option>
+                            <option value="">Roma, Italia</option>
+                            <option value="">Braga, Portugalia</option>
+                            <option value="">Cavat, Croația</option>
+                            <option value="">Paris, Franța</option>
+                        </select>
+                    </div>
+
+                    
+                </div>
+                
+                
+                
+            </div>
+            
+            <div class="order">
+                <a href="success.html" class="order-btn">COMANDĂ</a>       
+            </div>   
+
+
+        </section>
+        
+        
+
+        <script>
+            var bars = document.getElementById("bars")
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.display = "block"
+                bars.style.display = "none"
+            }
+            function hideMenu(){
+                navLinks.style.display = "none"
+                bars.style.display = "block"
+            }
+            
+        </script>
+    </body>
+
+</html>

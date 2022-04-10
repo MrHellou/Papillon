@@ -4,6 +4,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 /*! Section 1 */
 
 .header {
@@ -13,6 +15,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    
 }
 
 
@@ -27,6 +30,7 @@ nav {
 .sngLogo {
     padding-left: 20px;
     width: 80px;
+    
 }
 
 nav img {
@@ -202,6 +206,24 @@ nav .fa {
     opacity: 0.7;
 }
 
+.program{
+    width: 100%;
+    text-align: center;
+}
+.program h1 {
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.program p {
+    font-size: 20px;
+}
+
+.location-logo{
+    margin-top: 20px;
+    width: 20%;   
+}
 
 /*! Section 2*/
 
@@ -428,16 +450,30 @@ nav .fa {
 .ourTeam {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgb(110, 190, 190), rgba(0, 183, 225, 0.23));
+    background-image: linear-gradient(rgb(110, 190, 190),  rgba(110, 190, 190, 0.7));
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
+.ourTeam h2{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
 .teamTitle{
     margin-left: 20px;
-    text-align: left;
+    text-align: center;
 }
+
+.teamDepartament{
+    display: flex;
+    justify-content: space-around;
+}
+
 .teamDepartament h1{
     padding-top: 10px;
     text-align: center;
@@ -449,6 +485,23 @@ nav .fa {
     
 }
 
+.cbPad{
+    margin-top: 20px;
+}
+
+.departmentName{
+
+    width: 10%;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    
+}
+
+.departmentName h1{
+    margin-top: 60%;
+}
+
 .imgHolder{
     
     display: inline-block;
@@ -456,18 +509,88 @@ nav .fa {
     align-self: center;
     align-content: center;
     border-radius: 10%;
-    background-image: linear-gradient(#549ca9, #72ddeb );
+    background-image: linear-gradient(#549ca9, #549ca9 );
 }
 
 .imgHolder img{
     margin: 20px;
     width: 200px;
+    height: 178.98px;
     border-radius: 10%;
 }
 
 .teamBox{
     display: flex;
 }
+
+.endC{
+    padding-bottom: 200px;
+}
+
+
+
+/*! Formular Comanda */
+
+.comandaHeader{
+    width: 100%;
+    color: white;
+}
+.comandaHeader h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.custom-select{
+    text-align: center;
+}
+
+.custom-select select{
+    margin-top:50%;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(110, 190, 190);
+    color: white;
+}
+
+.formular{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.personalInfo{
+    padding-left: 100px;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+.name{
+    margin-top: 5px;
+    width: 30%;
+    justify-content: space-around;
+    text-align: left;
+    display: flex;
+}
+
+.inputs input{
+    font-size: 20px;
+}
+
+.moreBox textarea{
+    margin-top: 20px;
+    width: 300px;
+    resize: none;
+}
+
+.order{
+    width: 100%;   
+}
+.order a{
+    text-align: center;
+    margin-left:45%
+}
+
 
 /*! MediaQuery */
 
@@ -576,6 +699,16 @@ nav .fa {
 
     .about-us-tb p {
         font-size: 14px;
+    }
+
+    .teamDepartament{
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formular{
+            display: block;
     }
 
 }
